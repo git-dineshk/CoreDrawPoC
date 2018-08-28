@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="DockerTemplateCS2.DockerUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DockerTemplateCS2"
+             mc:Ignorable="d" 
+             MinWidth="225">
+    <Grid Margin="0,0,0,0">
+        <StackPanel>
+            <Label Content="Draw" />
+            <Button Content="Squad" Margin="2,0,0,0" Name="btn_drawSquad"/>
+            <Button Content="Cicle" Margin="2,0,0,0" Name="btn_drawCicle"/>
+            <!--<Button Content="Line" Margin="2,0,0,0" Name="btn_drawLine"/>
+            <Button Content="Text" Margin="2,0,0,0" Name="btn_drawText"/>-->
+            <Button Content="Text Text" Margin="2,0,0,0" Name="btn_linkText"/>
+            <Button Content="Area" Margin="2,0,0,0" Name="btn_curveArea"/>
+            <Button Content="ChangeColor" Margin="2,0,0,0" Name="btn_changeColor"/>
+            <Button Content="Read Text" Margin="2,0,0,0" Name="btn_ReadText"/>
+            <TextBox x:Name="txtBox_Info" Height="218" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+            <Button Content="Load Data" Margin="2,0,0,0" Name="btn_LoadData"/>
+            <DataGrid AutoGenerateColumns="False" Height="200" HorizontalAlignment="Left" Margin="10,10,10,10" Name="itemGrid" VerticalAlignment="Top" Width="330">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ItemId" Width="50" Binding="{Binding ItemId}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="ItemName" Width="100" Binding="{Binding ItemName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="ItemDesc" Width="100" Binding="{Binding ItemDesc}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+
+
+</UserControl>
